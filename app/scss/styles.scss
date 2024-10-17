@@ -1,25 +1,4 @@
 @import "globals";
 @import "variables";
-body {
-  background-color: lightgoldenrodyellow;
-  color: black;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  * {
-    border: 0.1px dashed gray;
-  }
-}
-.hamburger {
-  display: inline-flex;
-  flex-direction: column;
-  gap: 3px;
-  span {
-    display: inline-block;
-    width: 24px;
-    background-color: black;
-    height: 3px;
-  }
-}
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import "header";
