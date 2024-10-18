@@ -21,11 +21,13 @@
       }
     }
   }
-  &__link {
+  &__links {
     > a {
-      color: var(--grayish-blue);
       font-size: var(--font-sm);
-      margin-right: 30px;
+      color: inherit;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
     }
   }
 }

@@ -6,10 +6,9 @@
 }
 
 body {
-  background-color: lightgoldenrodyellow;
-  color: black;
   font-family: "Public Sans", sans-serif;
   font-size: var(--font-md);
+  color: var(--grayish-blue);
   line-height: 1.3;
   font-weight: 300;
 }
@@ -33,12 +32,27 @@ a:visited {
 }
 
 .button {
-  padding: 1rem 1.875rem;
+  padding: 0.875rem 1.875rem;
   border-radius: 50px;
   background: linear-gradient(to right, var(--lime-green), var(--bright-cyan));
   color: var(--white);
-  font-size: var(--font-sm);
   font-weight: 400;
+  font-size: var(--font-sm);
+}
+.button:hover {
+  opacity: 0.75;
+}
+
+@media (max-width: 700px) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 700px) {
+  .hide-for-desktop {
+    display: none;
+  }
 }
 
 :root {
@@ -74,8 +88,10 @@ a:visited {
 .header__menu > span:not(:last-child) {
   margin-bottom: 3px;
 }
-.header__link > a {
-  color: var(--grayish-blue);
+.header__links > a {
   font-size: var(--font-sm);
+  color: inherit;
+}
+.header__links > a:not(:last-child) {
   margin-right: 30px;
 }/*# sourceMappingURL=styles.css.map */
